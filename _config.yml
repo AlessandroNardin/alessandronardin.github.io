@@ -2,7 +2,7 @@
 title:               Alessandro Nardin
 tagline:             'Page for Google Summer of Code 2024'
 description:         ''
-url:                 https://alessandronardin.github.io/
+url:                 https://alessandronardin.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
