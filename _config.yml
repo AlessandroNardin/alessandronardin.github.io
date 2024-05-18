@@ -4,6 +4,7 @@ tagline:             'Page for Google Summer of Code 2024'
 description:         'A website containing the project abstract and weekly blog about my project for google summer of code 2024'
 url:                 alessandronardin@github.io
 baseurl:             'alessandronardin@github.io'
+absolute_url:        true
 paginate:            5
 permalink:           pretty
 
