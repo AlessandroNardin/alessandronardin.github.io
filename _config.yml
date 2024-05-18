@@ -4,7 +4,6 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Hyde
@@ -14,10 +13,11 @@ url:              http://hyde.getpoole.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Alessandro Nardin'
 
-paginate:         5
+gems:                [jekyll-paginate]
+paginate:            5
+paginate_path:       "page:num"
 
 # Custom vars
 version:          2.1.0
