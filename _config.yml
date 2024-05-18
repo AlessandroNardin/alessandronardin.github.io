@@ -3,7 +3,7 @@ title:               Google Summer of Code 2024
 tagline:             'Page for Google Summer of Code 2024'
 description:         'A website containing the project abstract and weekly blog about my project for google summer of code 2024'
 url:                 alessandronardin@github.io
-baseurl:             ''
+baseurl:             'alessandronardin@github.io'
 paginate:            5
 permalink:           pretty
 
