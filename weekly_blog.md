@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Weekly Blog
+title: Blog
 ---
 
 <div class="posts">
