@@ -4,13 +4,13 @@ title: Google Summer of Code 2024 - Final Report
 ---
 
 
-## Project Summary 
+# Project Summary 
 
 My project for the 2024 edition of Google Summer of Code was done in collaboration with the RTEMS Project. RTEMS (Real-Time Executive for Multiprocessor Systems) is a real-time operating system (RTOS) designed for embedded systems. (More information can be found on the [Project Page](https://www.rtems.org/))
 
 The goal of my project was to improve the POSIX compliance of the OS, specifically by working on the Asynchronous Input/Output (AIO) interface. My objective was to correct behaviors that did not comply with POSIX specifications and to implement the missing features.
 
-## My Contributions
+# My Contributions
 
 Below, you'll find a table summarizing all completed and planned contributions. The status of each contribution is specified. 
 The "Completed" status refers to contributions whose code has already been merged into the upstream repository. 
@@ -30,29 +30,29 @@ After the table, there is a short description outlining the goal of each contrib
 | Implement aio_suspend()                                             | Not started |                                                                           | - |
 | Update documentation                                                | Completed   | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56)-                                                                                  [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/post2/) |
 
-### Review and merge existing patches
+### - Review and merge existing patches
 This was my first contribution to the project. I began by reviewing patches provided by my mentor to determine if they were still relevant and should be merged. This task didn't involve writing any code, except for correcting a few formatting errors. However, it was valuable in helping me learn the RTEMS project's workflow and familiarize myself with the contribution submission process.
 
-### Correct the behavior of aio_return() and aio_error()
+### - Correct the behavior of aio_return() and aio_error()
 The goal of this part of the project was to correct the behavior of aio_return() and aio_error(). The issue was that these functions could be called multiple times for the same operation. This behavior violated POSIX specifications and needed to be corrected.
 
-### Add support for O_DSYNC in aio_fsync()
+### - Add support for O_DSYNC in aio_fsync()
 The objective here was to add missing functionality to the aio_fsync() function. According to the specification, one of the function’s parameters can accept two values that specify the type of synchronization to be performed. However, the function only accepted one of these values, so it was necessary to add support for the other.
 
-### Add notification at request completion
+### - Add notification at request completion
 One of the features missing from the implementation was the notification of request completion. One of the fields of the aiocb (Asynchronous Input/Output Control Block) is a sigevent struct, which must be used to generate a notification, as outlined by the POSIX specifications. This field was being ignored by the implementation, so my task was to add the code that utilized this field.
 
-### Implement lio_listio()
+### - Implement lio_listio()
 The goal of this part was to implement the missing lio_listio() method. The work on this task took longer than expected due to an error that took considerable time to resolve.
 
-### Implement aio_suspend()
+### - Implement aio_suspend()
 The goal of this part was to implement the missing aio_suspend() method. However, I was unable to start work on this task because finishing lio_listio() took longer than expected.
 
-### Update documentation
+### - Update documentation
 This contribution covers all the merge requests I made to update the documentation, including both Doxygen comments and the RTEMS API Docs.
 
 
-## What I learned
+# What I learned
 
 This experience has been an invaluable learning opportunity for me. Prior to this summer, my coding experience was limited to school and university projects. This meant I had only worked on small codebases, often entirely written by me. As a result, I rarely used version control programs since the code was typically used for a short period and then discarded. My experience with debugging tools was also limited, as the simple nature of the code I worked on allowed me to rely on print statements to diagnose and solve any errors.
 
