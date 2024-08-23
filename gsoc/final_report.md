@@ -20,17 +20,17 @@ Below, you'll find a table containing a summary of the various contribution i ma
 | Implement lio_listio()                                              | WIP       | !188 ( Draft )         | - |
 | Update documentation                                                | Completed | !56 !26                |  |
 
-####Review and merge existing patches
+#### Review and merge existing patches
 description
-####Correct the behavior of aio_return() and aio_error()
+#### Correct the behavior of aio_return() and aio_error()
 description
-####Add support for O_DSYNC in aio_fsync()
+#### Add support for O_DSYNC in aio_fsync()
 description
-####Add notification at request completion
+#### Add notification at request completion
 description
-####Implement lio_listio()
+#### Implement lio_listio()
 description
-####Update documentation
+#### Update documentation
 description
 ## What I learned
 text
