@@ -6,6 +6,15 @@ SUMMARY OF CONTRIBUTIONS
 
 Below you'll find a table that sums up my contributions to the project for this period of coding
 
+| Contribution                                                        | Status    | Related Merge Requests |
+| ------------------------------------------------------------------- | --------- | ---------------------- |
+| Review exisint patches that were not merged to the main repository. | Completed | !40 !41 !42            |
+| Update documentation                                                | Completed | !56 !26                |
+| Correct behaviour of aio_return and aio_error                       | Completed | !85                    |
+| Add support for O_DSYNC                                             | Completed | !128                   |
+| Generate notification at list completion                            | Completed | !118                   |
+| Implement lio_listio()                                              | WIP       | !188                   |
+
 Review exisint patches that were not merged to the main repository.
 !40 !41 !42
 
