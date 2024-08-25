@@ -12,9 +12,9 @@ The goal of my project was to improve the POSIX compliance of the OS, specifical
 
 # My Contributions
 
-Below, you'll find a table summarizing all completed and planned contributions. For each contribution, the progression status, the linked Merge Requests, and the Blog Post discussing that change are specified.
+Overall, I'm satisfied with the work I managed to do this summer. Most of the work I planned has been successfully completed, although not everything has been merged. There was more work than I anticipated to implement missing features and correct issues in the existing functions. This, combined with an unexpected and hard-to-identify error, led to my inability to fully complete the work on lio_listio(). However, I plan to continue working even after this experience ends to finish everything I started.
 
-After the table, there is a short description outlining the goal of each contribution. For more detailed information about each of them, you can refer to the blog posts linked in the table, which provide more insight and detail about the approach used for the solution and the difficulties encountered for each task.
+Below, you'll find a table summarizing all completed and planned contributions. After the table, there is a short description outlining the goal of each contribution. For more detailed information about each of them, you can refer to the blog posts linked in the table, which provide more insight and detail about the approach used for the solution and the difficulties encountered for each task.
 
 | Contribution                                                        | Status      | Related MR                                                                | Blog Posts |
 | :------------------------------------------------------------------ | :---------: | :------------------------------------------------------------------------ | :--------: |
@@ -23,7 +23,7 @@ After the table, there is a short description outlining the goal of each contrib
 | Add support for O_DSYNC in aio_fsync()                              | Completed        | [!128](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/128)    | [link](https://alessandronardin.github.io/gsoc/2024/08/02/dsync/) |
 | Add notification at request completion                              | Completed        | [!118](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/118)    | [link](https://alessandronardin.github.io/gsoc/2024/07/24/notification/) |
 | Implement lio_listio()                                              | Work in Progress | [!188](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/188)    | - |
-| Implement aio_suspend()                                             | Not started      |                                                                           | - |
+| Implement aio_suspend()                                             | Not started      |                                -                                          | - |
 | Update documentation                                                | Completed        | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56)-                                                                                       [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/docs_update/) |
 
 ### - Review and merge existing patches
@@ -39,10 +39,10 @@ The objective here was to add missing functionality to the aio_fsync() function.
 One of the features missing from the implementation was the notification of request completion. One of the fields of the aiocb (Asynchronous Input/Output Control Block) is a sigevent struct, which must be used to generate a notification, as outlined by the POSIX specifications. This field was being ignored by the implementation, so my task was to add the code that utilized this field.
 
 ### - Implement lio_listio()
-The goal of this part was to implement the missing lio_listio() method. The work on this task took longer than expected due to an error that took considerable time to resolve.
+The goal of this part was to implement the missing lio_listio() method. The work on this task is mostly complete. There's still an error that must be fixed befor merging the changes.
 
 ### - Implement aio_suspend()
-The goal of this part was to implement the missing aio_suspend() method. However, I was unable to start work on this task because finishing lio_listio() took longer than expected.
+The goal of this part was to implement the missing aio_suspend() method. However, I was unable to start this task because the work lio_listio() is taking longer than expected.
 
 ### - Update documentation
 This contribution covers all the merge requests I made to update the documentation, including both Doxygen comments and the RTEMS API Docs.
