@@ -12,23 +12,19 @@ The goal of my project was to improve the POSIX compliance of the OS, specifical
 
 # My Contributions
 
-Below, you'll find a table summarizing all completed and planned contributions. The status of each contribution is specified. 
-The "Completed" status refers to contributions whose code has already been merged into the upstream repository. 
-The "WIP" status refers to contributions for which some work has already been done but that are yet to be completed. 
-"Not started" refers to those contributions for which work has not yet begun. 
-Each contribution is also listed with the related Merge Requests (MR).
+Below, you'll find a table summarizing all completed and planned contributions. For each contribution, the progression status, the linked Merge Requests, and the Blog Post discussing that change are specified.
 
 After the table, there is a short description outlining the goal of each contribution. For more detailed information about each of them, you can refer to the blog posts linked in the table, which provide more insight and detail about the approach used for the solution and the difficulties encountered for each task.
 
 | Contribution                                                        | Status      | Related MR                                                                | Blog Posts |
 | :------------------------------------------------------------------ | :---------: | :------------------------------------------------------------------------ | :--------: |
-| Review and merge existing patches                                   | Completed   | [!40](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/40)-                                                                                  [!41](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/41)-                                                                                  [!42](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/42)      | [link](https://alessandronardin.github.io/gsoc/2024/06/04/patch_review/) |
-| Correct the behavior of aio_return() and aio_error()                | Completed   | [!85](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/85)      | [link](https://alessandronardin.github.io/gsoc/2024/06/25/error_return_correction/) |
-| Add support for O_DSYNC in aio_fsync()                              | Completed   | [!128](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/128)    | [link](https://alessandronardin.github.io/gsoc/2024/08/02/dsync/) |
-| Add notification at request completion                              | Completed   | [!118](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/118)    | [link](https://alessandronardin.github.io/gsoc/2024/07/24/notification/) |
-| Implement lio_listio()                                              | WIP         | [!188](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/188)    | - |
-| Implement aio_suspend()                                             | Not started |                                                                           | - |
-| Update documentation                                                | Completed   | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56)-                                                                                  [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/docs_update/) |
+| Review and merge existing patches                                   | Completed        | [!40](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/40)-                                                                                       [!41](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/41)-                                                                                       [!42](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/42)      | [link](https://alessandronardin.github.io/gsoc/2024/06/04/patch_review/) |
+| Correct the behavior of aio_return() and aio_error()                | Completed        | [!85](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/85)      | [link](https://alessandronardin.github.io/gsoc/2024/06/25/error_return_correction/) |
+| Add support for O_DSYNC in aio_fsync()                              | Completed        | [!128](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/128)    | [link](https://alessandronardin.github.io/gsoc/2024/08/02/dsync/) |
+| Add notification at request completion                              | Completed        | [!118](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/118)    | [link](https://alessandronardin.github.io/gsoc/2024/07/24/notification/) |
+| Implement lio_listio()                                              | Work in Progress | [!188](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/188)    | - |
+| Implement aio_suspend()                                             | Not started      |                                                                           | - |
+| Update documentation                                                | Completed        | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56)-                                                                                       [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/docs_update/) |
 
 ### - Review and merge existing patches
 This was my first contribution to the project. I began by reviewing patches provided by my mentor to determine if they were still relevant and should be merged. This task didn't involve writing any code, except for correcting a few formatting errors. However, it was valuable in helping me learn the RTEMS project's workflow and familiarize myself with the contribution submission process.
@@ -51,12 +47,11 @@ The goal of this part was to implement the missing aio_suspend() method. However
 ### - Update documentation
 This contribution covers all the merge requests I made to update the documentation, including both Doxygen comments and the RTEMS API Docs.
 
-
 # What I learned
 
 This experience has been an invaluable learning opportunity for me. Prior to this summer, my coding experience was limited to school and university projects. This meant I had only worked on small codebases, often entirely written by me. As a result, I rarely used version control programs since the code was typically used for a short period and then discarded. My experience with debugging tools was also limited, as the simple nature of the code I worked on allowed me to rely on print statements to diagnose and solve any errors.
 
-Working on the RTEMS project was a completely different experience. The large scale of the codebase challenged my existing knowledge. I had to refine my understanding of Git to manage my project fork effectively and submit my work for review. I also had to learn proper debugging techniques to resolve the errors I encountered. Writing tests to verify my code’s functionality and using test coverage tools to measure how much of my code was tested were also new skills I developed. I had to overcome my bad coding habits and adhere to the RTEMS coding standards to ensure that the code I wrote was understandable to others.
+Working on the RTEMS project was a completely different experience. The large scale of the codebase challenged my existing knowledge. I had to refine my understanding of Git to manage my project fork effectively and submit my work for review. I also had to learn proper debugging techniques to resolve the errors I encountered. To ensure code quality, I learned how to write extensive tests and run coverage analysis to determine how much of the code was effectively tested ([Dedicated Post about coverage](https://alessandronardin.github.io/gsoc/2024/08/02/coverage/)). I had to overcome my bad coding habits and adhere to the RTEMS coding standards to ensure that the code I wrote was understandable to others.
 
 I feel that my ability to read and understand code written by others, which I had rarely needed before, has greatly improved. When I started the application process, I couldn't even grasp the various project proposals listed by the organization. Now, after reading the documentation and working with the code, I have a decent understanding of the project's general structure. Even though my knowledge is primarily limited to the AIO interface, I can follow discussions by others and at least understand which part of the code is being affected.
 
