@@ -4,7 +4,7 @@ title: "Add notification at request completion"
 date: 2024-07-24
 categories: [GSoC]
 tags: [GSoC]
-excerpt: "Adding of notification via `sigevent` struct at request completion"
+excerpt: "Adding of notification via sigevent struct at request completion"
 author: Alessandro Nardin
 ---
 
