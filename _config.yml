@@ -1,21 +1,35 @@
-# Setup
-title:               Alessandro Nardin
-tagline:             'Page for Google Summer of Code 2024'
-description:         ''
-url:                 https://alessandronardin.github.io
-baseurl:             ''
-paginate:            5
-permalink:           pretty
+title: Alessandro Nardin
+tagline: Personal Portfolio
+email: ale.daluch@gmail.com
+baseurl: "" # leave empty if you're using a user/organization repo, else use "/repo-name"
+url: "https://alessandronardin.github.io" # change if you're using a custom domain
+twitter_username: jekyllrb
+github_username: AlessandroNardin
 
-# About/contact
-author:
-  name:              Alessandro Nardin
-  email:             ale.daluch@gmail.com
+# Build settings
+theme: null # we’re using a manual theme (Lanyon), not a gem theme
+markdown: kramdown
+permalink: pretty
 
-# Gems
 plugins:
-  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
 
-# Custom vars
-version:             1.1.0
-google_analytics_id: #UA-XXXX-Y
+# SCSS settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Pagination (only works if you enable it via plugin and layout)
+# paginate: 5
+# paginate_path: "/page:num"
+
+# Optional: Exclude stuff you don’t want published
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules/
+  - vendor/
+  - .gitignore
+  - .editorconfig
