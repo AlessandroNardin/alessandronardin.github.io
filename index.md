@@ -49,7 +49,7 @@ Check out my latest blog posts below — visit the blog page for the full archiv
       <div class="blog-content">
         <h2 class="blog-title">
           <a href="{{ post.url | absolute_url }}">
-            {% if post.path contains 'gsoc' %}**GSoC -** {% endif %}{{ post.title }}
+            {% if post.path contains 'gsoc' %}GSoC - {% endif %}{{ post.title }}
           </a>
         </h2>
         <div class="blog-date">{{ post.date | date: "%B %d, %Y" }}</div>
