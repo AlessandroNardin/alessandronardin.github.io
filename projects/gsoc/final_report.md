@@ -15,7 +15,7 @@ Following the official end of GSoC, I continued working to complete tasks that w
 |----------------------------------|:----------:|--------------------------------------------------------------------------------------------------|:----------:|
 | Implement `lio_listio()`         | Completed  | [!188](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/188)                           | -          |
 | Implement `aio_suspend()`        | Completed  | [!275](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/275)                           | -          |
-| Update documentation             | Completed  | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56), [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26), [!44](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/44), [!97](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/97) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/docs_update/) |
+| Update documentation             | Completed  | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56), [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26), [!44](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/44), [!97](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/97) | [link](https://alessandronardin.github.io/projects/gsoc/2024/06/11/docs_update/) |
 "
 %}
 
@@ -33,13 +33,13 @@ Below is a table summarizing all completed and planned contributions. After the 
 
 | Contribution                      | Status         | Related MR                                                                                       | Blog Posts |
 |----------------------------------|:--------------:|--------------------------------------------------------------------------------------------------|:----------:|
-| Review and merge existing patches| Completed      | [!40](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/40), [!41](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/41), [!42](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/42) | [link](https://alessandronardin.github.io/gsoc/2024/06/04/patch_review/) |
-| Correct the behavior of `aio_return()` and `aio_error()` | Completed | [!85](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/85) | [link](https://alessandronardin.github.io/gsoc/2024/06/25/error_return_correction/) |
-| Add support for `O_DSYNC` in `aio_fsync()` | Completed | [!128](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/128) | [link](https://alessandronardin.github.io/gsoc/2024/08/02/dsync/) |
-| Add notification at request completion | Completed | [!118](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/118) | [link](https://alessandronardin.github.io/gsoc/2024/07/24/notification/) |
+| Review and merge existing patches| Completed      | [!40](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/40), [!41](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/41), [!42](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/42) | [link](https://alessandronardin.github.io/projects/gsoc/2024/06/04/patch_review/) |
+| Correct the behavior of `aio_return()` and `aio_error()` | Completed | [!85](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/85) | [link](https://alessandronardin.github.io/projects/gsoc/2024/06/25/error_return_correction/) |
+| Add support for `O_DSYNC` in `aio_fsync()` | Completed | [!128](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/128) | [link](https://alessandronardin.github.io/projects/gsoc/2024/08/02/dsync/) |
+| Add notification at request completion | Completed | [!118](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/118) | [link](https://alessandronardin.github.io/projects/gsoc/2024/07/24/notification/) |
 | Implement `lio_listio()`         | Work in Progress | [!188](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/188) | - |
 | Implement `aio_suspend()`        | Not Started    | -                                                                                                | - |
-| Update documentation             | Completed      | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56), [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26), [!44](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/44) | [link](https://alessandronardin.github.io/gsoc/2024/06/11/docs_update/) |
+| Update documentation             | Completed      | [!56](https://gitlab.rtems.org/rtems/rtos/rtems/-/merge_requests/56), [!26](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/26), [!44](https://gitlab.rtems.org/rtems/docs/rtems-docs/-/merge_requests/44) | [link](https://alessandronardin.github.io/projects/gsoc/2024/06/11/docs_update/) |
 
 ### Review and Merge Existing Patches
 
@@ -73,7 +73,7 @@ This contribution includes updates to both **Doxygen** comments and the **RTEMS 
 
 This experience has been an invaluable learning opportunity. Before this summer, my programming experience was mostly limited to academic projects. These were small, short-lived, and often didn’t require tools like version control or professional debugging techniques.
 
-Working on the **RTEMS project** was a completely different challenge. The large codebase forced me to improve my Git skills, learn proper debugging methods, and understand the importance of writing well-tested, maintainable code. I also had to write and run test coverage analysis ([Dedicated Post about coverage](https://alessandronardin.github.io/gsoc/2024/08/02/coverage/)).
+Working on the **RTEMS project** was a completely different challenge. The large codebase forced me to improve my Git skills, learn proper debugging methods, and understand the importance of writing well-tested, maintainable code. I also had to write and run test coverage analysis ([Dedicated Post about coverage](https://alessandronardin.github.io/projects/gsoc/2024/08/02/coverage/)).
 
 I greatly improved my ability to understand unfamiliar code. When I first applied, I couldn’t fully grasp RTEMS project proposals. Now, I understand much of the structure, especially in the AIO area, and can follow conversations within the community.
 
