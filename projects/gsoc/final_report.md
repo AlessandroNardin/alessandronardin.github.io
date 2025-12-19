@@ -75,6 +75,4 @@ This experience has been an invaluable learning opportunity. Before this summer,
 
 Working on the **RTEMS project** was a completely different challenge. The large codebase forced me to improve my Git skills, learn proper debugging methods, and understand the importance of writing well-tested, maintainable code. I also had to write and run test coverage analysis ([Dedicated Post about coverage](https://alessandronardin.github.io/projects/gsoc/2024/08/02/coverage/)).
 
-I greatly improved my ability to understand unfamiliar code. When I first applied, I couldn’t fully grasp RTEMS project proposals. Now, I understand much of the structure, especially in the AIO area, and can follow conversations within the community.
-
-Overall, GSoC helped me grow as a developer. I now feel more confident in my ability to contribute to large projects and to produce high-quality, collaborative code. These skills will be invaluable in my future career.
+I greatly improved my ability to understand unfamiliar code. When I first applied, I couldn’t fully understand the RTEMS codebase and struggled to figure out how to work and complete my tasks. The more i worked, the more i started to understand the general structure and logic of the OS, especially in the AIO area. I became able to discuss possible solutions with my supervisor and to follow conversations within the community. GSoC helped me grow my develompent skills, now I feel more confident in my ability to contribute to large projects and to produce quality code.
