@@ -5,16 +5,20 @@ title: Portfolio
 
 # About Me
 
-**Hi, I'm Alessandro!**  
-I am a **Computer Engineering student** at the **University of Trento**, currently pursuing my bachelor’s degree. At the moment, I am on an **Erasmus exchange** at **DTU in Denmark**, where I am taking courses and working on my bachelor thesis.
+Hi, I'm Alessandro.
+Welcome to my website. Here you'll find the projects and experiments I'm most proud to share (or at least the ones I've found the time to upload).
 
-I am passionate about **robotics** and **embedded systems**, and one of my proudest achievements is being selected for **Google Summer of Code 2024**, where I contributed to **RTEMS**, an embedded operating system.
+Currently, I'm pursuing a Master's degree in Automation and Robotics Engineering at the University of Pisa. In parallel, I am an Honors Student (Allievo Ordinario) at Scuola Superiore Sant'Anna, a selective path that allows me to dive deeper into advanced topics and spend some extra hours in the lab.
+Before moving to Pisa, I earned my Bachelor's degree in Computer, Telecommunications, and Electronics Engineering at the University of Trento, with a strong focus on Computer Engineering.
+
+
+Note: I might forget to update this section for a while, so for context: this text was written on February 3rd, 2026.
 
 ---
 
 # Featured Projects
 
-Here are a few of the projects I've worked on. Head to the project page for the complete list.
+Here are the projects I’ve worked on. It's a growing list (currently starting with one), but you can view everything on the Projects page.
 
 <div class="projects-grid">
   {% assign shown_projects = 0 %}
@@ -39,7 +43,7 @@ Here are a few of the projects I've worked on. Head to the project page for the 
 
 # Recent Posts
 
-Check out my latest blog posts below — visit the blog page for the full archive.
+My latest blog posts. Right now it's mostly about my GSoC experience, but I might write more if I stumble upon something interesting enough to share.
 
 <div class="blog-posts-grid">
   {% for post in site.posts limit:3 %}
